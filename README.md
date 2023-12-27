@@ -1,2 +1,3 @@
 # internship
-Learnt during internship
+Learnt during InternShip
+

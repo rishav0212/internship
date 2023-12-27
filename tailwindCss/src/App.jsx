@@ -1,0 +1,19 @@
+
+import './App.css'
+import Card from './Card'
+
+function App() {
+
+  return (
+    <>
+      <h1 className='bg-green-400 text-black p-4 rounded-full bm-4' >TailwindCSS</h1>
+      <div>
+        <Card name = "Rishav Jindal" link = "C:\Users\Rishav\OneDrive\Pictures\Screenshots\Screenshot 2023-12-11 023211.png"/>
+        <Card name = "Sandeel Jindal" link = "https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"/>
+
+      </div>
+    </>
+  )
+}
+
+export default App

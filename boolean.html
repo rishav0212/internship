@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        console.log (typeof true);
+
+        console.log(2<3);
+
+        
+        if(2===3){
+            console.log(5);
+        }
+
+        let a = 0 || 3;
+        console.log(a);
+        // localStorage.setItem('aaa', "hwllooo");
+        console.log(localStorage.getItem('aaa'));
+
+        // const score = {
+        //     a :0,
+        //     b:1
+
+        // };
+        // localStorage.setItem('score', JSON.stringify(score));
+        
+        score =JSON.parse(localStorage.getItem('score'));
+        score.a = score.a+1;
+        console.log(score.a);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise</title>
+
+    <style>
+        .subs{
+            background-color: black;
+            font-size: medium;
+            color: white;
+            padding-block: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+
+
+        }
+
+        .is-subscribed{
+            background-color: rgb(227, 7, 7);
+
+        }
+
+        body {
+            font-family: arial;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Youtube Subscribe Button</h3> 
+        <p>
+            <button class="sub-button subs" onclick="change()">
+                Subscribe
+            </button>
+        </p>
+    </div>
+
+    <div>
+
+        <h3>
+            Rock Paper Scissors
+        </h3>
+    </div>
+
+    <div>
+        <h3>
+            Amazon Shipping Orders
+        </h3>
+
+        <p>Orders under $40 = +40 </p>
+        <p>Orders over $40 = Free</p>
+
+        <div>
+            <input placeholder="Cost of Order" class="amount-input" onkeydown="if(event.key==='Enter') display_result(Number(document.querySelector('.amount-input').value))" >
+            
+            <button onclick="display_result(Number(document.querySelector('.amount-input').value))">Calculate</button>
+
+            <p class="result"></p>
+        </div>
+
+    </div>
+      
+
+
+    <script>
+
+        let sub = 0;
+
+        function change(){
+            const text = document.querySelector('.sub-button');
+
+            if(!sub){
+                sub=1;
+                text.innerText = 'Subscribed';
+                text.classList.add('is-subscribed');
+            } else{
+                sub =0;
+                text.innerHTML = 'Subscribe';
+                text.classList.remove('is-subscribed');
+
+            }
+
+            console.log(text);
+        }
+
+        function display_result(n){
+            
+
+            if(n<40){
+
+                r =  n+10;
+            } else{
+                r =  n;
+            }
+
+            document.querySelector('.result').innerHTML = `${r}`;
+            return r;
+        }
+
+
+
+
+    </script>
+</body>
+</html>
